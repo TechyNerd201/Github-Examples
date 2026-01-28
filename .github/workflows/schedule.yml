@@ -1,10 +1,12 @@
-name: Scheduler 
+name: Scheduler
+
 on:
   schedule:
     - cron: '*/5 * * * *'
+
 jobs:
   hello_world:
-    runs-on : ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - name : Echo current time
-      run : echo "The current time is $(date)"
+      - name: Echo current time
+        run: echo "The current time is $(date)"
